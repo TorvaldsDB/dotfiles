@@ -127,3 +127,5 @@ func! RunCurrentLine()
   let lines = getline('.')
   exec "AsyncRun ".lines
 endfunc
+
+let g:go_version_warning = 0
