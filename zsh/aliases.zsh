@@ -245,3 +245,10 @@ alias brewu='brew update  && brew upgrade && brew cleanup && brew prune && brew 
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias date='gdate'
 fi
+
+# User Setting Alias
+alias ekohe='cd ~/workspace/ekohe/'
+alias mine='cd ~/workspace/mine/'
+alias podknife='cd ~/workspace/ekohe/podknife/'
+alias vcooline='cd ~/workspace/vcooline/'
+alias reocar='cd ~/workspace/vcooline/reocar/'
