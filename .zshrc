@@ -17,3 +17,15 @@ PATH=$HOME/bin:$PATH:/usr/local/mysql/bin
 export PATH
 fpath=(~/.zsh/completion $fpath)
 autoload -Uz compinit && compinit -i # is it necessary here?
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# LD
+PGHOME=/Applications/Postgres.app/Contents/Versions/latest
+export PATH="$PGHOME/bin:$PATH"
+export DYLD_FALLBACK_LIBRARY_PATH=$PGHOME/lib
+
+MYSQL_HOME=/usr/local/mysql
+export PATH="$MYSQL_HOME/bin:$MYSQL_HOME/support-files:$PATH"
+export DYLD_FALLBACK_LIBRARY_PATH="$MYSQL_HOME/lib:$DYLD_FALLBACK_LIBRARY_PATH"
