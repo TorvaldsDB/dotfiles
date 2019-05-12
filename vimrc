@@ -129,3 +129,11 @@ func! RunCurrentLine()
 endfunc
 
 let g:go_version_warning = 0
+
+let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_settings = {
+\  'javascript' : {
+\      'extends' : 'jsx',
+\  },
+\}
+
